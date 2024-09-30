@@ -20,7 +20,7 @@ let playersScore = {
   first: 0,
   second: 0,
 };
-let endOfGame = 15;
+let endOfGame = 10;
 
 let currentPlayer: string = "first";
 
@@ -123,7 +123,7 @@ function generateRnum(e: Event) {
       randomN = Math.round(Math.random() * 10);
       secondPlayerRandomNum!.textContent = String(randomN);
     }
-  }, 80);
+  }, 90);
 
   setTimeout(() => {
     clearInterval(randomNumberGenerator);
